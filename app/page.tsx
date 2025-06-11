@@ -1,7 +1,7 @@
 import SolarSystem from 'components/SolarSystem';
 import GlobalStyle from 'styles/global';
 
-export default function Home() {
+const Home = () => {
     return (
         <>
             <GlobalStyle />
@@ -18,5 +18,6 @@ export default function Home() {
             </main>
         </>
     );
-}
+};
 
+export default Home;

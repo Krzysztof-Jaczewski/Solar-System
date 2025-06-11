@@ -1,3 +1,4 @@
+// components/Planet.tsx
 'use client';
 
 import styled from 'styled-components';
@@ -13,6 +14,8 @@ const PlanetCircle = styled.div<{ size: number; color: string }>`
 
 interface PlanetProps extends PlanetData {}
 
-export default function Planet({ size, color }: PlanetProps) {
+const Planet = ({ size, color }: PlanetProps) => {
     return <PlanetCircle size={size} color={color} />;
-}
+};
+
+export default Planet;

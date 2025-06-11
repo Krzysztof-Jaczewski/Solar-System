@@ -5,15 +5,16 @@ export const metadata: Metadata = {
     description: 'Model Układu Słonecznego',
 };
 
-export default function RootLayout({
+const RootLayout = ({
     children,
 }: Readonly<{
     children: React.ReactNode;
-}>) {
+}>) => {
     return (
         <html lang='pl'>
             <body>{children}</body>
         </html>
     );
-}
+};
 
+export default RootLayout;

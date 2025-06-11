@@ -19,7 +19,7 @@ const Orbit = styled.div<{ distance: number }>`
     transform: translate(-50%, -50%);
     border-radius: 50%;
     border: 1px solid white;
-    opacity: 1;
+    opacity: 0.5;
 `;
 
 const PlanetWrapper = styled.div<{ distance: number }>`
@@ -29,7 +29,7 @@ const PlanetWrapper = styled.div<{ distance: number }>`
     transform: translate(-50%, -50%);
 `;
 
-export default function SolarSystem() {
+const SolarSystem = () => {
     return (
         <SolarSystemWrapper>
             {planets.map((planet) => (
@@ -42,4 +42,6 @@ export default function SolarSystem() {
             ))}
         </SolarSystemWrapper>
     );
-}
+};
+
+export default SolarSystem;
