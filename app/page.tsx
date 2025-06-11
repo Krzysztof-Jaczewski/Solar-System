@@ -1,5 +1,5 @@
-import Planet from '../components/Planet';
-import GlobalStyle from '../components/Planet';
+import Planet from 'components/Planet';
+import GlobalStyle from 'styles/global';
 
 export default function Home() {
     return (
@@ -19,3 +19,4 @@ export default function Home() {
         </>
     );
 }
+
