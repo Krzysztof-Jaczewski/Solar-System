@@ -1,4 +1,4 @@
-import Planet from 'components/Planet';
+import SolarSystem from 'components/SolarSystem';
 import GlobalStyle from 'styles/global';
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
                 }}
             >
                 <h1>🌌 Solar System</h1>
-                <Planet />
+                <SolarSystem />
             </main>
         </>
     );
