@@ -34,9 +34,8 @@ const Modal = ({ planet, onClose }: ModalProps) => (
     <Backdrop onClick={onClose}>
         <ModalBox onClick={(e) => e.stopPropagation()}>
             <h2>{planet.name}</h2>
-            <p>Rozmiar: {planet.size}</p>
-            <p>Kolor: {planet.color}</p>
-            <p>Odległość: {planet.distance}</p>
+            <p>Rozmiar: {planet.realSize} km</p>
+            <p>Odległość: {planet.realDistance} mln km</p>
             {planet.isSun && <p>To jest Słońce</p>}
         </ModalBox>
     </Backdrop>

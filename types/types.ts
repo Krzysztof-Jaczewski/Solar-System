@@ -4,5 +4,7 @@ export interface PlanetData {
     size: number;
     distance: number;
     speed?: number;
+    realDistance?: number;
+    realSize?: number;
     isSun?: boolean;
 }
